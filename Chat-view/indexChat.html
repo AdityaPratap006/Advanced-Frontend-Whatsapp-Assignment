@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>
+		Chat Application
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="indexChat.css">
+</head>
+
+<body>
+
+  <nav class="navbar   navbar-expand-lg  navbar-dark bg-primary">
+		  <a class="navbar-brand" id="Brand" href="#"><img src="../Resources/Aditya.png" alt="Aditya profile pic" class="rounded-circle"> Hi Aditya!</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto  ">
+		      <li class="nav-item active">
+		        <a class="nav-link menu-item" href="#">Chats </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link menu-item" href="#">Status</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link menu-item" href="#">Calls</a>
+		      </li>
+		      <li class="nav-item dropdown menu-item">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          More
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">New group</a>
+		          <a class="dropdown-item" href="#">Profile</a>
+		          <a class="dropdown-item" href="#">Archived</a>
+		          <a class="dropdown-item" href="#">Starred</a>
+		          <a class="dropdown-item" href="#">Settings</a>
+		          <a class="dropdown-item" href="#">Log out</a>
+		        </div>
+		      </li>
+		      
+		    </ul>
+		   
+		  </div>
+		</nav>
+
+<div class="container-fluid">
+  <div class="row justify-content-around align-items-center ">
+  
+    <div class="col-md-6 col-lg-4 d-none d-md-block "  >
+		 <div class="card border-light mb-3  w-100 p-3" style="width: 18rem;">
+	           <div class="card-header">
+	                     <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+								    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
+							  </div>
+							  <input type="text" class="form-control" placeholder="Search contacts" aria-label="Example text with button addon" aria-describedby="button-addon1">
+						 </div>
+	           </div>
+	          <div class="list-group">
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/notice.png" alt="Notice Bulletin profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Notice Bulletin</h5>
+				              <small>Just now</small>
+				           </div>
+				          <p class="mb-1">Abhay: Report to auditorium... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/dad.png" alt="Dad profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Dad</h5>
+				              <small>3 min ago</small>
+				           </div>
+				          <p class="mb-1">Check this link... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start  active ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/edward.png" alt="Edward profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Edward</h5>
+				              <small>25 min ago</small>
+				           </div>
+				          <p class="mb-1">final stage checking... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/mom.png" alt="Mom profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Mom</h5>
+				              <small>48 min ago</small>
+				           </div>
+				          <p class="mb-1">Beta dinner taken?... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/amit.png" alt="Amit profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Amit</h5>
+				              <small>1 hour ago</small>
+				           </div>
+				          <p class="mb-1"> Hi!  </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/cse.png" alt="NIT CSE 2K17 profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">NIT CSE 2K17</h5>
+				              <small> 14:20 </small>
+				           </div>
+				          <p class="mb-1">Mayank: Hello folks... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/sanay.png" alt="Sanay sir profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Sanay sir</h5>
+				              <small>9:30</small>
+				           </div>
+				          <p class="mb-1">Yeah most probably... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/john.png" alt="John profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">John</h5>
+				              <small>Yesterday</small>
+				           </div>
+				          <p class="mb-1">here are the details...</p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/errica.png" alt="Errica profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Errica</h5>
+				              <small>Yesterday</small>
+				           </div>
+				          <p class="mb-1">Good evening sir... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/uncle.png" alt="Uncle profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Unlce</h5>
+				              <small>2 days ago</small>
+				           </div>
+				          <p class="mb-1">God bless you beta </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/kunal.png" alt="Kunal profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Kunal</h5>
+				              <small>2 days ago</small>
+				           </div>
+				          <p class="mb-1">Ok I will look into the matter... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+				   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                     <div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/wilson.png" alt="Wilson profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Wilson</h5>
+				              <small>3 days ago</small>
+				           </div>
+				          <p class="mb-1">Enjoy bro... </p>
+				          
+                     	</div>
+                      </div>
+				    
+				  </a>
+               </div>
+			  
+		</div>
+		
+
+		
+    </div>
+    
+    <div class="col-md-6 col-lg-8   ">
+    	<div class="card">
+    		<div class="card-header">
+    			<div class="row">
+                     	<div class="col-3">
+                     		<img src="../Resources/edward.png" alt="Edward profile pic" class="rounded-circle">
+                     	</div>
+                     	<div class="col-9">
+                     		<div class="d-flex w-100  ">
+                              <h3 class="mb-1">Edward</h3>
+				               
+				           </div>
+				         
+				          
+                    </div>
+                 </div>
+ 		    </div>
+    		<div class="container chat-view">
+         	 <div class="d-flex flex-row p-2 bd-highlight">
+         	 	<div class="card w-75 text-white bg-primary">
+			      <div class="card-body">
+			        <h5 class="card-title">Edward</h5>
+			        <p class="card-text">Hi! Did you complete your web project? Did you upload it on github??</p>
+			         <span class="time-right">15:30  </span>
+			      </div>
+			    </div>
+         	 </div>
+         	  <div class="d-flex flex-row-reverse p-2 bd-highlight">
+         	 	<div class="card w-75 text-white bg-secondary">
+			      <div class="card-body">
+			        <h5 class="card-title">You</h5>
+			        <p class="card-text">Yes, the project is almost complete, I haven't uploaded it on github yet.</p>
+			         <span class="time-right">15:30 <br> Seen </span>
+			      </div>
+			    </div>
+         	 </div>
+         	 
+         	 <div class="d-flex flex-row p-2 bd-highlight">
+         	 	<div class="card w-75 text-white bg-primary">
+			      <div class="card-body">
+			        <h5 class="card-title">Edward</h5>
+			        <p class="card-text">Umm..ok , so what's the progress of your project?? May I know?</p>
+			         <span class="time-right">15:33</span>
+			      </div>
+			    </div>
+         	 </div>
+         	  <div class="d-flex flex-row-reverse p-2 bd-highlight">
+         	 	<div class="card w-75 text-white bg-secondary">
+			      <div class="card-body">
+			        <h5 class="card-title">You</h5>
+			        <p class="card-text">final stage checking going on, checking for any bugs, as soon as I find it bug-free it will be uploaded. I will update you with the link of the repository by evening.</p>
+			         <span class="time-right">15:35 <br> Delivered</span>
+			      </div>
+			    </div>
+         	 </div>
+			
+         
+		   
+        </div>
+        <div class="card-footer text-muted">
+            <input type="text" class="form-control" placeholder="Type a message">
+         </div>
+    	</div>
+
+         
+    
+  </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
